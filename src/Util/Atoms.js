@@ -5,10 +5,10 @@
 // Desc: Contains all global state for the application.
 //
 
-import { atom } from 'recoil'
+import { atom } from "recoil";
 
 //
-// Component access: 
+// Component access:
 //   Read/Write:
 //     App
 //     DrinkTable
@@ -19,16 +19,17 @@ import { atom } from 'recoil'
 //   Stores the drinks that the customer has ordered.
 //
 export const orderedDrinks = atom({
-    key: 'orderedDrinks',
-    default: {
-        tea: 0,
-        coffee: 0,
-        lemonade: 0
-    }
-})
+  key: "orderedDrinks",
+  default: {
+    tea: 0,
+    coffee: 0,
+    lemonade: 0,
+    milk: 0,
+  },
+});
 
 //
-// Component access: 
+// Component access:
 //   Read/Write:
 //     App
 //   Write:
@@ -37,6 +38,6 @@ export const orderedDrinks = atom({
 //  Shows and hides the offcanvas sidedrawer.
 //
 export const showSideDrawer = atom({
-    key: 'showSideDrawer',
-    default: false
-})
+  key: "showSideDrawer",
+  default: false,
+});
